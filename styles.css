@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #157A6E;
+    color: white;
+    font-family:"Verdana";
+    text-align: center;
+    border-bottom: 2px solid #B99B6B;
+    z-index: 10;
+}
+
+
+nav {
+    position: fixed;
+    top: 62px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: #B4654A;
+    border-bottom: 2px solid #B99B6B;
+    z-index: 10;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    font-family: "Verdana";
+  }
+
+p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.wrapper{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 113px;
+    width: 100%;
+    padding-bottom: 100px;
+    background-color: #F1DBBF;
+
+}
+
+.content {
+    position: block;
+    padding: 10px;
+    padding-left: 120px;
+    padding-right: 120px; 
+    width: 400px;
+    background-color: white;
+    border: 5px solid #157A6E;
+    border-radius: 10px;
+    margin: 2px;
+    font-family: "Verdana";
+    font-size: 14px;
+  }
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 45px;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: #B4654A;
+    color: white;
+    font-family: Verdana;
+    font-size: 12px;
+    z-index: 10;
+    border-top: 2px solid #B99B6B;
+}
+
+img {
+    position: block;
+    width: 100%;
+    border: 2px solid #B99B6B;
+    border-radius: 5px; 
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .content {
+        width: 100%;
+        position: block;
+        padding: 10px;
+      }
+    .wrapper {
+        width: 100%;
+        flex-direction: column;    
+    }
+
+
+    a {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+
+    .content {
+        width: 500px;
+        margin: 8px;
+    }
+
+    .wrapper {
+        width: 100%;
+        flex-direction: row;    
+    }
+}
